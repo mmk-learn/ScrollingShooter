@@ -99,10 +99,7 @@ class GameEngine extends SurfaceView implements Runnable, GameStarter, GameEngin
         for (InputObserver o : inputObservers) {
             o.handleInput(motionEvent, mGameState, mHUD.getControls());
         }
-        for (InputObserver o : inputObservers) {
-            o.handleInput(motionEvent, mGameState, mHUD.getControls());
-        }
-
+        
         return true;
     }
 
